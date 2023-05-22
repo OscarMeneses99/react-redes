@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <Layout>
       <h1 className='text-3xl font-medium'>Home</h1>
-      <div className="flex flex-col justify-center px-8 gap-5">
+      <div className="flex flex-col justify-center px-8 gap-5 mb-4">
         <h1 className="text-lg font-medium text-center">Protocolo RIP (Problema de conteo infinito)</h1>
         <p className='flex text-justify'>El Protocolo de Información de Enrutamiento (Routing Information Protocol, RIP) es un protocolo de enrutamiento utilizado en redes de computadoras para intercambiar información sobre las rutas disponibles entre routers. RIP utiliza un algoritmo de vector de distancia para calcular las rutas más cortas y determinar la mejor ruta hacia una red de destino.</p>
         <p className='flex text-justify'>El problema de conteo infinito es una limitación asociada con el protocolo RIP. Ocurre cuando hay una falla en la red que causa que los routers pierdan la conectividad con una red de destino. En lugar de detectar rápidamente el problema y encontrar una nueva ruta, RIP puede entrar en un ciclo de actualizaciones de enrutamiento que continúan propagándose entre los routers.</p>
