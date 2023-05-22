@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    color: #ffffff;
+    background-color: #242424;
+    }
+    a:hover {
+    color: #747bff;
+    }
+    button {
+    background-color: #424242;
+    }
+}
