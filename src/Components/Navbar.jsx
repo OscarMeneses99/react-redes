@@ -2,9 +2,9 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
 
-    const activeStyle = 'underline underline-offset-4'
+    const activeStyle = 'underline underline-offset-4 underline-black'
     return (
-        <nav className='flex justify-between items-center bg-zinc-900/1 fixed z-10 top-0 w-full py-5 px-8 text-sm font-light'>
+        <nav className='flex justify-between items-center bg-neutral-900 fixed z-10 top-0 w-full py-5 px-8 text-sm font-light'>
             <ul className='flex items-center gap-3'>
                 <li className='text-lg italic'>
                     <NavLink
@@ -33,7 +33,7 @@ const Navbar = () => {
             </ul>
             <ul>
                 <li className='text-white/60'>
-                    Oscar Meneses Solis - 9CM11
+                    By Oscar Meneses Solis - 9CM11
                 </li>
             </ul>
         </nav>

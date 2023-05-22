@@ -12,6 +12,7 @@ const Home = () => {
         <p className='flex text-justify'>El problema surge cuando otros routers reciben esta actualización y también eliminan la ruta de sus tablas de enrutamiento. Luego, envían actualizaciones a sus vecinos, incluido el router original que generó la actualización. Este proceso se repite en un ciclo continuo, conocido como conteo infinito, en el cual los routers continúan eliminando y enviando actualizaciones sobre la misma ruta caída.</p>
         <p className='flex text-justify'>El conteo infinito puede causar una congestión de red y un consumo excesivo de recursos de enrutamiento, lo que puede afectar negativamente el rendimiento de la red. Para mitigar este problema, se han desarrollado mejoras al protocolo RIP, como el uso de split horizon (horizonte dividido) y poison reverse (veneno reverso), que limitan la propagación de actualizaciones de enrutamiento para evitar el conteo infinito. También existen otros protocolos de enrutamiento más modernos y sofisticados, como OSPF (Open Shortest Path First) y BGP (Border Gateway Protocol), que se utilizan en redes más grandes y complejas, y que no sufren del problema de conteo infinito asociado con RIP.</p>
       </div>
+
     </Layout>
   )
 }
