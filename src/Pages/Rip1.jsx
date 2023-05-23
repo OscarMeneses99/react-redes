@@ -7,12 +7,21 @@ const Rip1 = () => {
       <div className="flex flex-col justify-center px-8 gap-5 mb-4">
         <h1 className='text-3xl font-medium'>RIP Version 1.0</h1>
         <p className='flex text-justify'>Es un protocolo estándar abierto, lo que significa que funciona en los enrutadores de varios proveedores. Funciona en la mayoría de los enrutadores, es un protocolo de enrutamiento con clase. Las actualizaciones se transmiten. Su valor de distancia administrativa es 120, quiere decir que no es confiable, cuanto menor sea el valor de distancia administrativa la confiabilidad es mucho mayor. Su métrica es el conteo de saltos y el conteo máximo de saltos es 15. Habrá un total de 16 enrutadores en la red. Cuando haya el mismo número de saltos para llegar al destino, Rip comienza a realizar el equilibrio de carga. Equilibrio de carga significa que si hay tres formas de llegar al destino y cada una tiene la misma cantidad de enrutadores, los paquetes se enviarán a cada ruta para llegar al destino. Esto reduce el tráfico y también se equilibra la carga. Se utiliza en pequeñas empresas, en este protocolo las tablas de enrutamiento se actualizan cada 30 seg. Cada vez que se rompe el enlace, traza otro camino para llegar al destino. Es uno de los protocolos más lentos.</p>
+
         <h2>Ventajas</h2>
         <ul className='list-disc'>
           <li>Fácil de configurar, el enrutador estático es complejo.</li>
           <li>Menos gastos generales</li>
           <li>Sin complejidad</li>
         </ul>
+        <h2>Desventajas</h2>
+        <ul className='list-disc'>
+          <li>La utilización del ancho de banda es muy alta, ya que se transmite cada 30 segundos.</li>
+          <li>Funciona solo en conteo de saltos.</li>
+          <li>No es escalable ya que el conteo de saltos es de solo 15. Si se requieren más enrutadores en la red, sería un problema.</li>
+          <li>La convergencia es muy lenta, se pierde mucho tiempo en encontrar un camino alternativo.</li>
+        </ul>
+
         <table className="table-fixed border-collapse border border-slate-500 w-96">
           <thead>
             <tr>
